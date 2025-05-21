@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regester</title>
+
+    <style>
+        #pass,#email{
+            border: 1px solid #ccd0d5;
+    margin-left: 25%;
+    width: 350px;
+    padding: 3px;
+    height: 30px;
+        }
+     #regstersubmit   {
+        border: 1px solid #ccd0d5;
+    margin-left: 25%;
+    width: 100px;
+    padding: 3px;
+    height: 30px;
+        }
+    </style>
+
+
+<script>
+var em=localStorage.getItem('email')
+function compare(){
+    if (document.getElementById("email").value===em) {
+        
+        alert("your info is correct")
+        // document.getElementById("body").onload(compare())
+        
+    }
+    else{
+        alert("your info is not correct please make sure of your email and password ");
+
+    }
+    
+    }
+</script>
+</head >
+<body id="body">
+    <form action="home.html">
+        <fieldset>
+            <legend>regestration</legend>
+        <input type="email" placeholder="enter your Email" id="email" required><br><br>
+        <input type="password" placeholder="your password" id="pass" required><br><br>
+        <input type="submit" id="regstersubmit" value="sign in" onclick="compare()" >
+        <a href="create account.html" >createaccount</a>
+
+    </fieldset>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="home-style.css" />
+    <title>Ecommerce</title>
+    <script src="homejavascript.js"></script>
+  </head>
+
+  <body
+    onload="getData('https://fakestoreapi.com/products/categories','category')"
+  >
+    <div class="grid-container">
+      <div class="Header">
+        <!-- <input type="tel" id="phone" placeholder="Enter your number">
+        <label for="ss" ><img src="images/search.jpg" width="50px" height="50px" id="search-img"></label> -->
+        <!-- logo -->
+        <!-- <img src="images/search.jpg" width="50px" height="50px" id="search-img"> -->
+
+        <input
+          type="search"
+          id="search"
+          onblur="saerch_blur()"
+          onclick="search_style()"
+        />
+      </div>
+
+      <div class="Nav" id="nav_bar" onscroll="nav_scorell()">
+        <ul id="nav_ul">
+          <li class="nav_li"><a href="">home</a></li>
+          <li class="nav_li"><a href="">contact</a></li>
+          <li class="nav_li"><a href="">about1</a></li>
+          <li class="nav_li"><a href="create account.html">sign in</a></li>
+        </ul>
+      </div>
+
+      <div class="Menu">
+        <div class="menu-contacts">
+          <ul id="menu_ul">
+            <h3 style="padding: 0%">links</h3>
+
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+            <li class="menu_li"><a href="www.facebook.com">my facebook</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <form style="display: none" action="products.html" method="get" id="form">
+        <input type="hidden" name="prod-url" id="prod-url" />
+      </form>
+      <div class="Main" id="main">
+        <div id="main_div" style="display: none">
+          <section
+            style="
+              width: 300px;
+              background-color: rgb(255, 255, 255);
+              border-radius: 10%;
+            "
+            id="section"
+          >
+            <div class="card" id="card" style="border-radius: 10%">
+              <a href=""
+                ><img
+                  src=""
+                  alt="Avatar"
+                  height="200px"
+                  width="300px"
+                  style="
+                    border-top-left-radius: 10%;
+                    border-top-right-radius: 10%;
+                  "
+              /></a>
+              <div class="container" id="container">
+                <h4><b>catagory</b></h4>
+                <p>Architect & Engineer</p>
+
+                <h4><b>Price $</b></h4>
+                <p id="price">1500 L.E</p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!--  <button onclick="addnode()">Add</button> -->
+      </div>
+      <!-- <div class="Right">Right</div> -->
+
+      <div class="Footer">
+        <footer style="margin-top: 100px">
+          <div id="footerDiv">
+            <h1
+              style="
+                color: white;
+                text-align: center;
+                font-family: sans-serif;
+                padding-top: 70px;
+              "
+            >
+              Adress
+            </h1>
+            <hr
+              style="
+                color: white;
+                font-size: 3px;
+                margin-right: 150px;
+                margin-left: 150px;
+                margin-top: 8px;
+              "
+            />
+
+            <h3
+              style="
+                color: white;
+                text-align: center;
+                font-family: sans-serif;
+                padding-top: 30px;
+              "
+            >
+              Cairo - Egypt , 172 Street Marghny-Misr EL-gdida
+            </h3>
+
+            <h4
+              style="
+                color: white;
+                text-align: center;
+                font-family: sans-serif;
+                padding-top: 10pxpx;
+              "
+            >
+              (+20) 01122205544 / 01146734515
+            </h4>
+
+            <h4
+              style="
+                color: white;
+                text-align: center;
+                font-family: sans-serif;
+                padding-top: 10pxpx;
+              "
+            >
+              E-mail : gehadabdelgwad3@gmail.com
+            </h4>
+
+            <center>
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter-square"></i>
+            </center>
+
+            <center>
+              <a href="" class="footerancor">Home</a>
+              <a href="" class="footerancor">About</a>
+              <a href="" class="footerancor">Brand</a>
+              <a href="" class="footerancor">Contact us</a>
+            </center>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
